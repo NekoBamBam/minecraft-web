@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import fondo from "../assets/fondo.webp"
 
 function Navbar() {
   return (
@@ -6,6 +7,7 @@ function Navbar() {
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-white text-2xl font-bold">Sapucraft!</h1>
         <div className="flex space-x-4">
+          <img src={fondo} alt="" className='h-10 w-full' />
           <Link to="/" className="text-white hover:text-gray-300">Inicio</Link>
           <Link to="/jugadores" className="text-white hover:text-gray-300">Jugadores</Link>
           <Link to="/memories" className="text-white hover:text-gray-300">Recuerdos</Link>
